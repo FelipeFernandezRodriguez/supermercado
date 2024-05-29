@@ -24,7 +24,7 @@ public class CajeroProducto {
      * Procesa la compra de un cliente, mostrando información detallada.
     */
     public void procesarCompra(ClienteProducto cliente, long timeStanp) {
-        System.out.println("Cajero " + this.nombreCajero + " comienza a procesar la compra del cliente "
+        System.out.println("\nCajero " + this.nombreCajero + " comienza a procesar la compra del cliente "
                 + cliente.getNombre() + " en el tiempo " + (System.currentTimeMillis() - timeStanp) / 1000
                 + " seg "
                 + "\n\n-------------------------------------------------------\n");

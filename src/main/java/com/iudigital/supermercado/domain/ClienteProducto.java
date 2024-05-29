@@ -26,7 +26,7 @@ public class ClienteProducto {
     }
     
     /**
-     * Getter y Setter
+     * Getters
      */
     public String getNombre() {
         return nombre;

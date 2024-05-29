@@ -6,12 +6,12 @@ package com.iudigital.supermercado.domain;
 public class Producto {
 
     /**
-     * * @param nombre   El nombre del producto.
+     * * @param nombre El nombre del producto.
      */
     private String nombre;
     
     /**
-     * @param precio   El precio unitario del producto.
+     * @param precio El precio unitario del producto.
      */
     private float precio;
     

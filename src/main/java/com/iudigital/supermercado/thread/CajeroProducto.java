@@ -3,16 +3,28 @@ package com.iudigital.supermercado.thread;
 import com.iudigital.supermercado.domain.ClienteProducto;
 import com.iudigital.supermercado.domain.Producto;
 
+/**
+ * Representa un cajero que procesa compras de clientes en un supermercado.
+ */
 public class CajeroProducto {
 
+    /**
+     * @param nombreCajero El nombre del cajero.
+     */
     private String nombreCajero;
 
+    /**
+     * Constructor
+    */
     public CajeroProducto(String nombreCajero) {
         this.nombreCajero = nombreCajero;
     }
 
+    /**
+     * Procesa la compra de un cliente, mostrando información detallada.
+    */
     public void procesarCompra(ClienteProducto cliente, long timeStanp) {
-        System.out.println("Cajeo " + this.nombreCajero + " comienza a procesar la compra del cliente "
+        System.out.println("Cajero " + this.nombreCajero + " comienza a procesar la compra del cliente "
                 + cliente.getNombre() + " en el tiempo " + (System.currentTimeMillis() - timeStanp) / 1000
                 + " seg "
                 + "\n\n-------------------------------------------------------\n");
@@ -35,6 +47,9 @@ public class CajeroProducto {
                 + "\n\n-------------------------------------------------------\n");
     }
 
+    /**
+     * Espera un segundo (1000 milisegundos).
+     */
     private void esperarXSegundos() {
         try {
             Thread.sleep(1000);
